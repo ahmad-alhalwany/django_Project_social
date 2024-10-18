@@ -8,8 +8,15 @@
     ],
     "routes": [
     {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+    },
+    {
         "src": "/(.*)",
         "dest": "mystudybud/wsgi.py"
     }
-    ]
+    ],
+    "scripts": {
+    "postinstall": "python manage.py collectstatic --noinput"
+    }
 }
