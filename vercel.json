@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "mystudybud/wsgi.py",
+        "src": "base/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.4" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "mystudybud/wsgi.py"
+            "dest": "base/wsgi.py"
         }
     ]
 }
