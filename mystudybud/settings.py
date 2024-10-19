@@ -106,7 +106,7 @@ DATABASES = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://ahmad:AYFYAAIjcDFlMzBhYTg5YTg0YjE0NGUxYjRkZGM2NGUyZGY4ODMyZHAxMA@kind-newt-33112.upstash.io:6379/0',
+        'LOCATION': 'redis://ahmad:AYFYAAIjcDFlMzBhYTg5YTg0YjE0NGUxYjRkZGM2NGUyZGY4ODMyZHAxMA@kind-newt-33112.upstash.io:6379',
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
