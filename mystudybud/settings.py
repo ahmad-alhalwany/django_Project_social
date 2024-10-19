@@ -49,6 +49,8 @@ AUTH_USER_MODEL = 'base.User'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
     "corsheaders.middleware.CorsMiddleware",
     
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -146,4 +148,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
