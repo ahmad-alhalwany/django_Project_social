@@ -106,11 +106,11 @@ DATABASES = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://your-redis-url:6379/1',  # Update with actual Redis URL
+        'LOCATION': 'redis-13799.c61.us-east-1-3.ec2.redns.redis-cloud.com:13799',
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
-        'TIMEOUT': 300,  # Optional cache timeout (300 seconds)
+        'TIMEOUT': 300,
     }
 }
 
